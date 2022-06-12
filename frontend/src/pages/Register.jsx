@@ -7,6 +7,8 @@ import {register, reset} from '../features/auth/authSlice'
 import Spinner from '../componets/Spinner'
 
 function Register() {
+    
+    
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
@@ -47,7 +49,7 @@ function Register() {
         e.preventDefault()
 
         if(password !== password2) {
-            toast.error('Passwords do  not match')
+            toast.error('Passwords do not match')
         } else {
             const userData = {
                 firstName,
